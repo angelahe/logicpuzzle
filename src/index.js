@@ -88,6 +88,12 @@ class Square extends React.Component {
               {this.renderSquare(8)}
             </div>
           </div> 
+          <div>
+            <div>
+              <div classname="h3.vertical">Clue One</div>
+              <div p>this is a test of coolness</div> 
+            </div>
+          </div>
         </div>
       );
     }

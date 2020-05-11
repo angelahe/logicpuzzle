@@ -44,3 +44,6 @@ npx create-react-app logicpuzzle
 
 #using jest in harmony with react-scripts test
 npm run jest /jest
+
+#resources for dev
+css-tricks.com/snippets/css/text-rotation
