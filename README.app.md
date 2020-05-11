@@ -41,3 +41,6 @@ x - delete
 https://create-react-app.dev/docs/getting-started/
 first: npm uninstall -g create-react-app
 npx create-react-app logicpuzzle
+
+#using jest in harmony with react-scripts test
+npm run jest /jest
