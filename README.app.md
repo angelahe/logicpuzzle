@@ -1,6 +1,18 @@
-#logic puzzle
+# logic puzzle
+will use redux for state management
+will use enzyme and react test renderer for front end tests
 
-#vim shortcuts
+## setup
+```
+npx create-react-app logicpuzzle
+npm i react-redux --save-dev
+npm install classnames --save-dev
+npm install enzyme enzyme-adapter-react-16 enzyme-to-json --save-dev
+
+```
+https://medium.com/@kaiz.hudda/how-to-setup-jest-enzyme-in-your-existing-react-app-in-5-mins-bf21841f4738
+
+# vim shortcuts
 https://vim.rtorr.com/
 move: eg 4 j go down 4 lines
 h j k l

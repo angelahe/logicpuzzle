@@ -90,8 +90,8 @@ class Square extends React.Component {
           </div> 
           <div>
             <div>
-              <div classname="h3.vertical">Clue One</div>
-              <div p>this is a test of coolness</div> 
+              <div classname="vertical">Clue One</div>
+              <div>this is a test of coolness</div> 
             </div>
           </div>
         </div>
