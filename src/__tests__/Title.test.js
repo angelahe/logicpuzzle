@@ -1,6 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import Title from './Title';
+
+import Title from '../components/Title';
+
 const title = 'Test Title';
 let wrapped = shallow(<Title>{title}</Title>);
 describe('Title', () => {

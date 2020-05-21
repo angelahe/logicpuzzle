@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import NavBarComp from './components/NavBarComp';
+import './styles/index.css';
 
 class Square extends React.Component {
     constructor(props) {
@@ -36,6 +37,7 @@ class Square extends React.Component {
   
       return (
         <div>
+          <NavBarComp />
           <div className="status">{status}</div>
           <div className="box1">
             <div className="board-row">
