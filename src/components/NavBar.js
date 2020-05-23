@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import '../styles/index.css';
+import React from "react";
+//import PropTypes from "prop-types";
+import "../styles/index.css";
 
-class NavBarComp extends React.Component {
+class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,4 +25,4 @@ class NavBarComp extends React.Component {
     }
 }
 
-export default NavBarComp;
+export default NavBar;

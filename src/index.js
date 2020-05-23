@@ -1,126 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import NavBarComp from './components/NavBarComp';
-import './styles/index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import App from "./App";
 
-class Square extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state =  {
-            value: null,
-        };
-    }
+const rootElement = document.getElementById("root");
 
-    render() {
-      return (
-        <button className="square" onClick={() => this.setState({value: 'X'})}>
-          {this.state.value}
-        </button>
-      );
-    }
-  }
-  
-  class Board extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        squares: Array(9).fill(null),
-      };
-    }
-
-    renderSquare(i) {
-      return <Square value={this.state.squares[i]} />;
-    }
-  
-    render() {
-      const status = 'Click once for X, again for 0, again for blank:';
-  
-      return (
-        <div>
-          <NavBarComp />
-          <div className="status">{status}</div>
-          <div className="box1">
-            <div className="board-row">
-              {this.renderSquare(0)}
-              {this.renderSquare(1)}
-              {this.renderSquare(2)}
-            </div>
-            <div className="board-row">
-              {this.renderSquare(3)}
-              {this.renderSquare(4)}
-              {this.renderSquare(5)}
-            </div>
-            <div className="board-row">
-              {this.renderSquare(6)}
-              {this.renderSquare(7)}
-              {this.renderSquare(8)} 
-            </div>
-          </div>
-          <div className="box2">
-            <div className="board-row">
-              {this.renderSquare(0)}
-              {this.renderSquare(1)}
-              {this.renderSquare(2)}
-            </div>
-            <div className="board-row">
-              {this.renderSquare(3)}
-              {this.renderSquare(4)}
-              {this.renderSquare(5)}
-            </div>
-            <div className="board-row">
-              {this.renderSquare(6)}
-              {this.renderSquare(7)}
-              {this.renderSquare(8)}
-            </div>
-          </div>
-          <div className="box3">
-            <div className="board-row">
-              {this.renderSquare(0)}
-              {this.renderSquare(1)}
-              {this.renderSquare(2)}
-            </div>
-            <div className="board-row">
-              {this.renderSquare(3)}
-              {this.renderSquare(4)}
-              {this.renderSquare(5)}
-            </div>
-            <div className="board-row">
-              {this.renderSquare(6)}
-              {this.renderSquare(7)}
-              {this.renderSquare(8)}
-            </div>
-          </div> 
-          <div>
-            <div>
-              <div classname="vertical">Clue One</div>
-              <div>this is a test of coolness</div> 
-            </div>
-          </div>
-        </div>
-      );
-    }
-  }
-  
-  class Game extends React.Component {
-    render() {
-      return (
-        <div className="game">
-          <div className="game-board">
-            <Board />
-          </div>
-          <div className="game-info">
-            <div>{/* status */}</div>
-            <ol>{/* TODO */}</ol>
-          </div>
-        </div>
-      );
-    }
-  }
-  
-  // ========================================
-  
-  ReactDOM.render(
-    <Game />,
-    document.getElementById('root')
-  );
+ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    rootElement
+);
   

@@ -13,6 +13,9 @@ npm i redux --save-dev
 ```
 https://medium.com/@kaiz.hudda/how-to-setup-jest-enzyme-in-your-existing-react-app-in-5-mins-bf21841f4738
 
+## tests
+npm test
+
 # vim shortcuts
 https://vim.rtorr.com/
 move: eg 4 j go down 4 lines
