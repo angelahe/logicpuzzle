@@ -81,8 +81,14 @@ section {
     transform-origin: 0 0;
  }
 
- vertical {
+ .vertical {
    font-size: 2rem;
    font-weight: bold;
    color: blue;
  }
+
+ .LineContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
