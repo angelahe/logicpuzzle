@@ -22,6 +22,12 @@
       return (
         <div>
           <div className="status">{status}</div>
+          <div className="LineContainer verticaltext">
+            <div className = "box-1-1">
+              <FourLabelH /> 
+            </div>
+            <FourLabelH />
+          </div>
           <div className="LineContainer">
             <FourLabelH />
             <div className="box-1-1">
@@ -39,12 +45,14 @@
           </div>
           <div className="LineContainer">
             <div>
-              <div classname="vertical">Clue One</div>
+              <div className="verticaltext">Clue One</div>
               <div>this is a test of coolness</div> 
-              
+              <p className="verticaltext">one</p>
             </div>
           </div>
-          
+          <div>
+            <p className="verticaltext">abc</p>
+          </div>
         </div>
       );
     }

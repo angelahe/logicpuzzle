@@ -13,6 +13,13 @@ npm i redux --save-dev
 npm install classnames --save-dev
 ```
 https://medium.com/@kaiz.hudda/how-to-setup-jest-enzyme-in-your-existing-react-app-in-5-mins-bf21841f4738
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation
+myStyle: {
+    transform: [{ rotate: '90deg'}]
+}
+https://reactnative.dev/docs/transforms.html#proptypes
+https://medium.com/@therealmaarten/how-to-layout-rotated-text-in-react-native-6d55b7d71ca5
+https://reactnative.dev/
 
 ## tests
 npm test
