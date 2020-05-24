@@ -2,6 +2,7 @@
  import Square from "./Square";
  import FourGrid from "./FourGrid";
  import Clue from "./Clue";
+ import FourLabelH from "./FourLabelH";
 
  class Board extends React.Component {
     constructor(props) {
@@ -22,6 +23,7 @@
         <div>
           <div className="status">{status}</div>
           <div className="LineContainer">
+            <FourLabelH />
             <div className="box-1-1">
               <FourGrid />
             </div>
@@ -30,6 +32,7 @@
             </div>
           </div>
           <div className="LineContainer">
+            <FourLabelH />
             <div className="box-2-1">
               <FourGrid />
             </div>
