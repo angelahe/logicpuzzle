@@ -1,23 +1,18 @@
 import React from "react";
-import { connect } from "react-redux";
-import cx from "classnames";
-import { toggleClue } from "../redux/actions";
+import PropTypes from "prop-types";
 
-const Clue = ({ clue, toggleClue }) => (
-  <li className = "clue-item" onClick={() => toggleClue(clue.id)}>
-    {clue && clue.completed ? "_" : "X"}{" "}
-    <span
-      className={cx(
-        "clue-item__text",
-        clue && clue.completed && "todo-item__text--completed"
-      )}
-    >
-      {clue.content}
-    </span>
+const Clue = ({ onClick, completed, text }) => (
+  <li className = "clue-item" 
+    onClick={onClick}>
+    style={{ textDecoration: completed ? 'line-through' : 'none' }}
+  >
+    {text}
   </li>
 );
 
-export default connect(
-  null,
-  { toggleClue }
-)(Clue);
+Clue.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  completed: PropTypes.bool.isRequired,
+  text: PropTypes.string.isRequired
+}
+export default Clue

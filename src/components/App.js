@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import Board from "./Board";
-import AddClue from "./AddClue";
+import AddClue from "../containers/AddClue";
 import ClueList from "./ClueList";
 
 import "../styles/index.css";

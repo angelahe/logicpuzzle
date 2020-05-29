@@ -2,16 +2,14 @@ import { ADD_CLUE, TOGGLE_CLUE } from "../actionTypes";
 
 let nextClueId = 0;
 
-export const addClue = content => ({
+export const addClue = text => ({
   type: ADD_CLUE,
-  payload: {
-    id: ++nextClueId,
-    content
-  }
+  id: nextClueId++,
+  text
 });
 
 export const toggleClue = id => ({
   type: TOGGLE_CLUE,
-  payload: { id }
+  id
 });
 

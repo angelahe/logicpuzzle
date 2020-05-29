@@ -1,40 +1,24 @@
 import { ADD_CLUE, TOGGLE_CLUE } from "../actionTypes";
 
-const initialState = {
-  allIds: [],
-  byIds: {}
-};
-
-export default function(state = initialState, action) {
+const clues = (state = [], action) => {
   switch (action.type) {
-    case ADD_CLUE: {
-      const { id, content } = action.payload;
-      return {
+    case ADD_CLUE: 
+      return [
         ...state,
-        allIds: [...state.allIds, id],
-        byIds: {
-          ...state.byIds,
-          [id] : {
-            content, 
-            completed: false
-          }
+        {
+          id: action.id,
+          text: action.text,
+          completed: false
         }
-      };
-    }
-    case TOGGLE_CLUE: {
-      const { id } = action.payload;
-      return {
-        ...state,
-        byIds: {
-          ...state.byIds,
-          [id]: {
-            ...state.byIds[id],
-            completed: !state.byIds[id].completed
-          }
-        }
-      };
-    }
-    default:
+      ]
+    case TOGGLE_CLUE: 
+      return state.map(clue =>
+        clue.id === action.id ? {
+          ...clue, completed: !clue.completed } :clue
+      )
+    default: 
       return state;
   }
 }
+
+export default clues
