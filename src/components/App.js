@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Board from "./components/Board";
-import AddClue from "./components/AddClue";
-import ClueList from "./components/ClueList";
+import NavBar from "./NavBar";
+import Board from "./Board";
+import AddClue from "./AddClue";
+import ClueList from "./ClueList";
 
-import "./styles/index.css";
+import "../styles/index.css";
 
 export default function App() {
     return(

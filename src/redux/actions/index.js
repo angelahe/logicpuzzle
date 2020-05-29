@@ -1,4 +1,4 @@
-import { ADD_CLUE, TOGGLE_CLUE } from "./actionTypes";
+import { ADD_CLUE, TOGGLE_CLUE } from "../actionTypes";
 
 let nextClueId = 0;
 
