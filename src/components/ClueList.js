@@ -15,15 +15,4 @@ const ClueList = ({ clues }) => (
   </ul>
 );
 
-
-const mapStateToProps = state => {
-  const { byIds, allIds } = state.clues || {};
-  const clues =
-    allIds && state.clues.allIds.length
-      ? allIds.map(id => (byIds ? { ...byIds[id], id } : null))
-      : null;
-  return { clues };
-};
-
-export default connect(mapStateToProps)(ClueList);
-//export default connect(state => ({ todos: getClues(state) }))(ClueList)
+export default connect(state => ({ clues: getClues(state) }))(ClueList)

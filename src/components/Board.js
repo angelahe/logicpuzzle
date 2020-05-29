@@ -1,7 +1,6 @@
  import React from "react";
  import Square from "./Square";
  import FourGrid from "./FourGrid";
- import Clue from "./Clue";
  import FourLabelH from "./FourLabelH";
 
  class Board extends React.Component {
