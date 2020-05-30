@@ -1,11 +1,7 @@
-// components/ClueList.js
 import React from "react";
 import PropTypes from "prop-types";
-//import { connect } from "react-redux";
 import Clue from "./Clue";
-//import { getClues } from "../redux/selectors";
-//import { toggleClue } from "../redux/actions";
-
+/*
 const ClueList = ({ clues, toggleClue }) => (
   <ul className = "clue-list">
     {clues && clues.length
@@ -18,7 +14,21 @@ const ClueList = ({ clues, toggleClue }) => (
       : "No clue!"
     }
   </ul>
-);
+)
+*/
+//try this way:
+
+const ClueList = ({ clues, toggleClue }) => (
+  <ul>
+    {clues.map(clue => 
+      <Clue key={clue.id} 
+      {...clue} 
+      onClick={() => toggleClue(clue.id)} 
+      />
+    )}
+  </ul>
+)
+
 
 ClueList.propTypes = {
   clues: PropTypes.arrayOf(
@@ -26,9 +36,9 @@ ClueList.propTypes = {
       id: PropTypes.number.isRequired,
       completed: PropTypes.bool.isRequired,
       text: PropTypes.string.isRequired
-    }).isRequired,
+    }).isRequired
   ).isRequired,
-  toggleTodo: PropTypes.func.isRequired
+  toggleClue: PropTypes.func.isRequired
 }
-//export default connect(state => ({ clues: getClues(state) }))(ClueList)
+
 export default ClueList

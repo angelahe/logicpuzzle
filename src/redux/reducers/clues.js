@@ -17,7 +17,7 @@ const clues = (state = [], action) => {
           ...clue, completed: !clue.completed } :clue
       )
     default: 
-      return state;
+      return state
   }
 }
 

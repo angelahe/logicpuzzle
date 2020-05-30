@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Clue = ({ onClick, completed, text }) => (
   <li className = "clue-item" 
-    onClick={onClick}>
+    onClick={onClick}
     style={{ textDecoration: completed ? 'line-through' : 'none' }}
   >
     {text}

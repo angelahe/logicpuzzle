@@ -1,2 +1,3 @@
 export const ADD_CLUE = "ADD_CLUE";
 export const TOGGLE_CLUE = "TOGGLE_CLUE";
+export const SET_VISIBILITY_FILTER = "SET_VISIBILITY_FILTER";

@@ -22,7 +22,7 @@ const AddClue = ({ dispatch }) => {
             input = node
           }}
         />
-        <button type="submit">Add Todo</button>
+        <button type="submit">Add Clue</button>
       </form>
     </div>
   )
