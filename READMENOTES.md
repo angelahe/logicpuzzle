@@ -11,6 +11,7 @@ npm install enzyme enzyme-adapter-react-16 enzyme-to-json --save-dev
 npm install react-test-renderer --save-dev
 npm i redux --save-dev
 npm install classnames --save-dev
+npm install bootstrap --save-dev
 ```
 https://medium.com/@kaiz.hudda/how-to-setup-jest-enzyme-in-your-existing-react-app-in-5-mins-bf21841f4738
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation

@@ -21,8 +21,13 @@
       return (
         <div>
           <div className="status">{status}</div>
+          <div className="d-flex flex-row">
+            <div className="p-2">one</div>
+            <div className="p-2">two</div>
+            <div className="p-2">three</div>
+          </div>
           <div className="d-flex flex-row" style={{ height: '150px' }}>
-            <div className="align-self-end p-2 verticaltext"></div>
+            <div className="align-self-end p-2"></div>
             <div className="align-self-end p-2 verticaltext">
               <FourLabelH /> 
             </div>
@@ -30,12 +35,12 @@
               <FourLabelH />
             </div>
           </div>
-          <div className="d-inline-flex flex-row" style={{ height: '150px' }}>
+          <div className="d-flex flex-row" style={{ height: '150px' }}>
               <FourLabelH />
               <FourGrid />
               <FourGrid />
                       </div>
-          <div className="d-inline-flex flex-row" style={{ height: '100px' }}>
+          <div className="d-flex flex-row" style={{ height: '100px' }}>
             <FourLabelH />
             <div className="p-2 box-2-1">
               <FourGrid />

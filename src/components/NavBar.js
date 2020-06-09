@@ -16,8 +16,8 @@ class NavBar extends React.Component {
         } = this.state;
 
       return (
-        <div className = "NavBarComp d-flex bd-highlight">
-          <button type="button" className="NavBarBack p-4 bd-highlight col-style">Puzzles</button>
+        <div className = "NavBarComp d-flex flex-row bd-highlight">
+          <button type="button" className="NavBarBack p-2 bd-highlight col-style">Puzzles</button>
           <button type="button" className="NavBarHint p-2 bd-highlight col-style">Hint</button>
           <button type="button" className="NavBarUndo p-2 bd-highlight col-style">Undo</button>
         </div>
