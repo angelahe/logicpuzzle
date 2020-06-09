@@ -21,36 +21,25 @@
       return (
         <div>
           <div className="status">{status}</div>
-          <div className="LineContainer verticaltext">
-            <div className = "box-1-1">
+          <div className="d-flex flex-row" style={{ height: '150px' }}>
+            <div className="align-self-end p-2 verticaltext"></div>
+            <div className="align-self-end p-2 verticaltext">
               <FourLabelH /> 
             </div>
-            <FourLabelH />
+            <div className="align-self-end p-2 verticaltext">
+              <FourLabelH />
+            </div>
           </div>
-          <div className="LineContainer">
+          <div className="d-inline-flex flex-row" style={{ height: '150px' }}>
+              <FourLabelH />
+              <FourGrid />
+              <FourGrid />
+                      </div>
+          <div className="d-inline-flex flex-row" style={{ height: '100px' }}>
             <FourLabelH />
-            <div className="box-1-1">
+            <div className="p-2 box-2-1">
               <FourGrid />
             </div>
-            <div className='box-1-2'>
-              <FourGrid />
-            </div>
-          </div>
-          <div className="LineContainer">
-            <FourLabelH />
-            <div className="box-2-1">
-              <FourGrid />
-            </div>
-          </div>
-          <div className="LineContainer">
-            <div>
-              <div className="verticaltext">Clue One</div>
-              <div>this is a test of coolness</div> 
-              <p className="verticaltext">one</p>
-            </div>
-          </div>
-          <div>
-            <p className="verticaltext">abc</p>
           </div>
         </div>
       );
