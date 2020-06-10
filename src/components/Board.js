@@ -1,4 +1,5 @@
  import React from "react";
+ import PropTypes from 'prop-types';
  import Square from "./Square";
  import FourGrid from "./FourGrid";
  import FourLabelH from "./FourLabelH";
@@ -14,10 +15,6 @@
         squares: Array(9).fill(null),
       };
     }
-
-    renderSquare(i) {
-      return <Square value={this.state.squares[i]} />;
-    }
   
     render() {
       const status = 'Click once for X, again for O, again for blank:';
@@ -31,7 +28,7 @@
             <div className="GridAndFillIn">
               <div className="Instructions status">{status}</div>
               <div className="PuzzleGrid">
-                <div className="d-flex justify-content-start" style={{ height: '160px' }}>
+                <div className="d-flex justify-content-start" style={{ height: '165px' }}>
                   <div className="grid-label BlankSpace"></div>
                   <div className="grid-label flex-column verticaltext">
                     <FourLabelH /> 
@@ -40,7 +37,7 @@
                     <FourLabelH />
                   </div>
                 </div>
-                <div className="d-flex flex-row" style={{ height: '160px' }}>
+                <div className="d-flex flex-row" style={{ height: '165px' }}>
                   <div className="p-2 grid-label">
                     <FourLabelH />
                   </div>
@@ -51,7 +48,7 @@
                     <FourGrid />
                   </div>  
                 </div>
-                <div className="d-flex flex-row" style={{ height: '160px' }}>
+                <div className="d-flex flex-row" style={{ height: '165px' }}>
                   <div className="grid-label flex-column">
                     <FourLabelH />
                   </div>
@@ -83,3 +80,8 @@
   }
   
   export default Board;
+
+Board.propTypes = {
+  title: PropTypes.string.isRequired,
+  story: PropTypes.string.isRequired,
+}
