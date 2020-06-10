@@ -17,11 +17,11 @@ class FourLabelH extends React.Component {
   render() {
     return (
 
-      <div className="d-inline-flex flex-column">
-        <div className="p-2 text-right">{this.state.label1}</div>
-        <div className="p-2 text-right">{this.state.label2}</div> 
-        <div className="p-2 text-right">{this.state.label3}</div>
-        <div className="p-2 text-right">{this.state.label4}</div>
+      <div>
+        <div className="label-1">{this.state.label1}</div>
+        <div className="label-2">{this.state.label2}</div> 
+        <div className="label-3">{this.state.label3}</div>
+        <div className="label-4">{this.state.label4}</div>
       </div>
     );
   }

@@ -9,14 +9,7 @@ import "../styles/index.css";
 
 const App = () => (
   <div className = "game-app">
-    <NavBar />
-    <div className = "game-board">
       <Board />
-      <h1>Clue List</h1>
-      <AddClue />
-      <VisibleClueList />
-      <Footer />
-    </div>
   </div>
 )
 
