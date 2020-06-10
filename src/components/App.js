@@ -1,15 +1,22 @@
 import React from "react";
-import NavBar from "./NavBar";
 import Board from "./Board";
-import AddClue from "../containers/AddClue";
-import VisibleClueList from "../containers/VisibleClueList";
-import Footer from "./Footer";
+import puzzles from "../data/example_puzzles";
 
 import "../styles/index.css";
 
 const App = () => (
   <div className = "game-app">
-      <Board />
+      {puzzles.map(puzzle =>
+        <Board
+            title={puzzle.title}
+            story={puzzle.story}
+            clues={puzzle.clues}
+            labelSetOne={puzzle.labelSetOne}
+            labelSetTwo={puzzle.labelSetTwo}
+            labelSetThree={puzzle.labelSetThree}
+            solution={puzzle.solution}
+        />
+      )}
   </div>
 )
 
