@@ -1,23 +1,14 @@
-// src/components/Square.js
-
 import React from "react"; 
+import PropTypes from "prop-types";
+
 // import { connect } from "react-redux";
 
-class Square extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state =  {
-            value: null,
-        };
-    }
+const Square = ({ onClick, squarestate }) => (
+  <button className="square" onClick={onClick}>{squarestate}</button>
+)
 
-    render() {
-      return (
-        <button className="square" onClick={() => this.setState({value: 'X'})}>
-          {this.state.value}
-        </button>
-      );
-    }
-  }
-
-  export default Square;
+Square.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  squarestate: PropTypes.string.isRequired
+}
+export default Square
