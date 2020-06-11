@@ -1,6 +1,5 @@
  import React from "react";
  import PropTypes from 'prop-types';
- import Square from "./Square";
  import FourGrid from "./FourGrid";
  import FourLabelH from "./FourLabelH";
  import NavBar from "./NavBar";
