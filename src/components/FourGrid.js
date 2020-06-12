@@ -35,7 +35,7 @@ const FourGrid = ({ gridnum, squares, toggleSquare }) => (
       {squares.slice(12, 16).map((square, index) =>
       <Square key={index}
         {...square} 
-        onClick={() => toggleSquare(gridnum, square.id)}
+        onClick={() => toggleSquare(gridnum, index)}
       />
       )
       }

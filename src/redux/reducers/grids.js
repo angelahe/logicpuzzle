@@ -12,8 +12,12 @@ const grids = (state = [], action) => {
         }
       ]
     case TOGGLE_SQUARE:
-      
-      return state
+      return state.map(grids => (grids.gridnum === action.gridnum) 
+      {
+        if grids.squares[action.index]
+      }
+        grids.gridnum === action.gridnum)
+      )
     case UNDO_MOVE:
       return state
     default:
