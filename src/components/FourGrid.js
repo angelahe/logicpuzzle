@@ -1,48 +1,57 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Square from "./Square";
 
-class FourGrid extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      squares: Array(16).fill(null),
-    };
-  }
+const FourGrid = ({ gridnum, squares, toggleSquare }) => (
+  <div className="four-grid">
+    <div className = "board-row">
+      {squares.slice(0, 4).map((square, index) =>
+      <Square key={index}
+        {...square} 
+        onClick={() => toggleSquare(gridnum, square.id)}
+      />
+      )
+      }
+    </div>
+    <div className = "board-row">
+      {squares.slice(4, 8).map((square, index) =>
+      <Square key={index}
+        {...square} 
+        onClick={() => toggleSquare(gridnum, square.id)}
+      />
+      )
+      }
+    </div>
+    <div className = "board-row">
+      {squares.slice(8, 12).map((square, index) =>
+      <Square key={index}
+        {...square} 
+        onClick={() => toggleSquare(gridnum, square.id)}
+      />
+      )
+      }
+    </div>
+    <div className = "board-row">
+      {squares.slice(12, 16).map((square, index) =>
+      <Square key={index}
+        {...square} 
+        onClick={() => toggleSquare(gridnum, square.id)}
+      />
+      )
+      }
+    </div>
+  </div>
+)
 
-  renderSquare(i) {
-    return <Square value = {this.state.squares[i]} />;
-  }
-
-  render() {
-    return (
-      <div className="four-grid">
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-          {this.renderSquare(3)}  
-        </div>
-        <div className="board-row">
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(8)}
-          {this.renderSquare(9)}
-          {this.renderSquare(10)} 
-          {this.renderSquare(11)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(12)}
-          {this.renderSquare(13)}
-          {this.renderSquare(14)} 
-          {this.renderSquare(15)}
-        </div>
-      </div>
-    );
-  }
+FourGrid.propTypes = {
+  grids: PropTypes.arrayOf(
+    PropTypes.shape({
+      gridnum: PropTypes.number.isRequired,
+      gridsize: PropTypes.number.isRequired,
+      squares: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }).isRequired
+  ).isRequired,
+  toggleSquare: PropTypes.func.isRequired
 }
 
-export default FourGrid;
+export default FourGrid

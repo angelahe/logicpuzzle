@@ -12,6 +12,7 @@ const grids = (state = [], action) => {
         }
       ]
     case TOGGLE_SQUARE:
+      
       return state
     case UNDO_MOVE:
       return state

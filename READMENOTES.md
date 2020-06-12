@@ -22,6 +22,15 @@ https://reactnative.dev/docs/transforms.html#proptypes
 https://medium.com/@therealmaarten/how-to-layout-rotated-text-in-react-native-6d55b7d71ca5
 https://reactnative.dev/
 
+## further reading
+https://reactjs.org/docs/lists-and-keys.html
+const todoItems = todos.map((todo, index) =>
+  // Only do this if items have no stable IDs
+  <li key={index}>
+    {todo.text}
+  </li>
+);
+
 ## tests
 npm test
 
