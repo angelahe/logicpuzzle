@@ -12,12 +12,23 @@ const grids = (state = [], action) => {
         }
       ]
     case TOGGLE_SQUARE:
-      return state.map(grids => (grids.gridnum === action.gridnum) 
-      {
-        if grids.squares[action.index]
-      }
-        grids.gridnum === action.gridnum)
-      )
+        /* try to make a copy of slice of state before change 
+        let newgrids = ...state.grids[gridnum].squares
+        */
+        switch (grids.squares[action.index]) {
+          case '':
+            grids.squares[action.index] = 'X';
+            break;
+          case 'X':
+            grids.squares[action.index] = 'O';
+            break;
+          case 'O':
+            grids.squares[action.index] = '';
+            break;
+          default:
+            grids.squares[action.index] = ''
+        }
+      return state
     case UNDO_MOVE:
       return state
     default:
