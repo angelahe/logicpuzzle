@@ -30,7 +30,9 @@ const todoItems = todos.map((todo, index) =>
     {todo.text}
   </li>
 );
-
+https://stackoverflow.com/questions/32325912/react-proptype-array-with-shape
+nested proptypes:
+https://www.javascriptstuff.com/validate-nested-proptypes/
 ## tests
 npm test
 

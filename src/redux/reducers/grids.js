@@ -15,18 +15,18 @@ const grids = (state = [], action) => {
         /* try to make a copy of slice of state before change 
         let newgrids = ...state.grids[gridnum].squares
         */
-        switch (grids.squares[action.index]) {
+        switch (grids[action.gridnum].squares[action.index]) {
           case '':
-            grids.squares[action.index] = 'X';
+            grids[action.gridnum].squares[action.index] = 'X';
             break;
           case 'X':
-            grids.squares[action.index] = 'O';
+            grids[action.gridnum].squares[action.index] = 'O';
             break;
           case 'O':
-            grids.squares[action.index] = '';
+            grids[action.gridnum].squares[action.index] = '';
             break;
           default:
-            grids.squares[action.index] = ''
+            grids[action.gridnum].squares[action.index] = ''
         }
       return state
     case UNDO_MOVE:
@@ -54,7 +54,7 @@ constructor(props) {
       );
     }
 
-    from fourgrid state was:
+  from fourgrid state was:
     constructor(props) {
     super(props);
     this.state = {
