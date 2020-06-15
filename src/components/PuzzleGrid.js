@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import FourGrid from "./FourGrid";
 import FourLabelH from "./FourLabelH"
 
-
 const PuzzleGrid = ({ grids, toggleSquare }) => (
   <div className="PuzzleGrid">
     <div className="d-flex justify-content-start" style={{ height: '165px' }}>

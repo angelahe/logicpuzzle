@@ -1,6 +1,6 @@
  import React from "react";
  import PropTypes from "prop-types";
- import PuzzleGrid from "./PuzzleGrid";
+ import GridView from "../containers/GridView";
  import NavBar from "./NavBar";
  import AddClue from "../containers/AddClue";
  import VisibleClueList from "../containers/VisibleClueList";
@@ -17,7 +17,7 @@
       <div className="GridAndFillIn">
         <div className="Instructions status">{status}</div>
         <div>
-          <PuzzleGrid />
+          <GridView />
         </div>
         <div className="FillInGrid">
           puzzle fillin here 
