@@ -3,6 +3,7 @@ import { ADD_CLUE, TOGGLE_CLUE, SET_VISIBILITY_FILTER,
 } from "../actionTypes";
 
 let nextClueId = 0;
+let nextGridNum = 0;
 
 export const addClue = text => ({
   type: ADD_CLUE,
@@ -28,6 +29,6 @@ export const toggleSquare = (gridnum, index) => ({
 
 export const initGrid = (gridnum, gridsize) => ({
   type: INIT_GRID,
-  gridnum,
+  gridnum: nextGridNum++,
   gridsize
 })

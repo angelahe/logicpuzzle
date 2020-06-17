@@ -1,13 +1,21 @@
 import React from "react";
 import Board from "./Board";
-import puzzles from "../data/example_puzzles";
+/*import puzzles from "../data/example_puzzles";*/
 
 import "../styles/index.css";
 
 const App = () => (
   <div className = "game-app">
+      <Board />
+  </div>
+)
+
+/*
+const App = () => (
+  <div className = "game-app">
       {puzzles.map(puzzle =>
         <Board
+            key={'board'+toString(puzzles.index)}
             title={puzzle.title}
             story={puzzle.story}
             clues={puzzle.clues}
@@ -19,5 +27,6 @@ const App = () => (
       )}
   </div>
 )
+*/
 
 export default App

@@ -1,6 +1,19 @@
 import { INIT_GRID, TOGGLE_SQUARE, UNDO_MOVE } from "../actionTypes";
 
-const grids = (state = [], action) => {
+const defaultGrid = [
+    { gridnum: 0,
+      gridsize: 16,
+      squares: Array(16).fill(null)},
+    { gridnum: 0,
+      gridsize: 16,
+      squares: Array(16).fill(null)}, 
+    { gridnum: 0,
+      gridsize: 16,
+      squares: Array(16).fill(null)}
+    ]
+
+
+const grids = (state = defaultGrid, action) => {
   switch (action.type) {
     case INIT_GRID:
       return [

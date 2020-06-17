@@ -65,7 +65,6 @@ const FourGrid = ({ gridnum, squares, toggleSquare }) => (
 
 FourGrid.propTypes = {
   gridnum: PropTypes.number.isRequired,
-  gridsize: PropTypes.number.isRequired,
   squares: PropTypes.arrayOf(PropTypes.string).isRequired,
   toggleSquare: PropTypes.func.isRequired
 }

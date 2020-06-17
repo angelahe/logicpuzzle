@@ -19,10 +19,10 @@ const PuzzleGrid = ({ grids, toggleSquare }) => (
         <FourLabelH />
       </div>
       <div className="p-2 fourgrid">
-        <FourGrid key={0} {...grids[0]} />
+        <FourGrid key={'grid0'} {...grids[0]} {...toggleSquare}/>
       </div>  
       <div className="p-2 fourgrid">
-        <FourGrid key={1} {...grids[1]} />
+        <FourGrid key={'grid1'} {...grids[1]} {...toggleSquare}/>
       </div>  
     </div>
     <div className="d-flex flex-row" style={{ height: '165px' }}>
@@ -30,11 +30,10 @@ const PuzzleGrid = ({ grids, toggleSquare }) => (
         <FourLabelH />
       </div>
       <div className="p-2 fourgrid box-2-1">
-        <FourGrid key={2} {...grids[2]} />
+        <FourGrid key={'grid2'} {...grids[2]} {...toggleSquare}/>
       </div>
     </div>
   </div>
-
 )
 
 PuzzleGrid.propTypes = {
@@ -49,3 +48,7 @@ PuzzleGrid.propTypes = {
 }
 
 export default PuzzleGrid
+
+/*find the error!
+
+*/

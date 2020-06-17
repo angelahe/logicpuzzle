@@ -33,6 +33,11 @@ const todoItems = todos.map((todo, index) =>
 https://stackoverflow.com/questions/32325912/react-proptype-array-with-shape
 nested proptypes:
 https://www.javascriptstuff.com/validate-nested-proptypes/
+https://medium.com/ag-grid/learn-to-customize-react-grid-in-less-than-10-minutes-2ce6845646bb
+
+https://www.grapecity.com/blogs/editable-datagrid-in-a-react-redux-application
+https://redux.js.org/recipes/structuring-reducers/initializing-state#:~:text=There%20are%20two%20main%20ways,to%20use%20as%20a%20default.
+
 ## tests
 npm test
 

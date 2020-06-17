@@ -39,11 +39,11 @@
   </div>
  )
   
-Board.propTypes = {
+/*Board.propTypes = {
   title: PropTypes.string.isRequired,
   story: PropTypes.string.isRequired,
-  
 }
+*/
 
 export default Board;
 

@@ -29,7 +29,6 @@ const ClueList = ({ clues, toggleClue }) => (
   </ul>
 )
 
-
 ClueList.propTypes = {
   clues: PropTypes.arrayOf(
     PropTypes.shape({

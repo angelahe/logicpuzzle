@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { toggleSquare } from "../redux/actions";
-import { PuzzleGrid } from "../components/PuzzleGrid";
+import  PuzzleGrid from "../components/PuzzleGrid";
 
 //will hold history actions later
 const getGridState = (grids) => {
