@@ -21,7 +21,7 @@ const grids = (state = defaultGrid, action) => {
         {
           gridnum: action.gridnum,
           gridsize: action.gridsize,
-          squares: Array(action.gridsize).fill(null)
+          squares: Array(action.gridsize).fill(' ')
         }
       ]
     case TOGGLE_SQUARE:
