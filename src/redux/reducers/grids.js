@@ -3,13 +3,13 @@ import { INIT_GRID, TOGGLE_SQUARE, UNDO_MOVE } from "../actionTypes";
 const defaultGrid = [
     { gridnum: 0,
       gridsize: 16,
-      squares: Array(16).fill(null)},
+      squares: Array(16).fill(' ')},
     { gridnum: 0,
       gridsize: 16,
-      squares: Array(16).fill(null)}, 
+      squares: Array(16).fill(' ')}, 
     { gridnum: 0,
       gridsize: 16,
-      squares: Array(16).fill(null)}
+      squares: Array(16).fill(' ')}
     ]
 
 
@@ -29,17 +29,17 @@ const grids = (state = defaultGrid, action) => {
         let newgrids = ...state.grids[gridnum].squares
         */
         switch (grids[action.gridnum].squares[action.index]) {
-          case '':
+          case ' ':
             grids[action.gridnum].squares[action.index] = 'X';
             break;
           case 'X':
             grids[action.gridnum].squares[action.index] = 'O';
             break;
           case 'O':
-            grids[action.gridnum].squares[action.index] = '';
+            grids[action.gridnum].squares[action.index] = ' ';
             break;
           default:
-            grids[action.gridnum].squares[action.index] = ''
+            grids[action.gridnum].squares[action.index] = ' '
         }
       return state
     case UNDO_MOVE:
