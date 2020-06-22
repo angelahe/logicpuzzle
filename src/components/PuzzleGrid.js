@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import FourGrid from "./FourGrid";
-import FourLabelH from "./FourLabelH"
+import FourLabelH from "./FourLabelH";
 
 const PuzzleGrid = ({ grids, toggleSquare }) => (
   <div className="PuzzleGrid">
@@ -41,7 +41,7 @@ PuzzleGrid.propTypes = {
     PropTypes.shape({
       gridnum: PropTypes.number.isRequired,
       gridsize: PropTypes.number.isRequired,
-      squares: PropTypes.arrayOf(PropTypes.string).isRequired,
+      squares: PropTypes.arrayOf(PropTypes.string).isRequired
     }).isRequired
   ).isRequired,
   toggleSquare: PropTypes.func.isRequired

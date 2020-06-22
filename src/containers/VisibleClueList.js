@@ -1,7 +1,7 @@
-import { connect } from 'react-redux'
-import { toggleClue } from '../redux/actions'
-import ClueList from '../components/ClueList'
-import { VISIBILITY_FILTERS } from '../constants'
+import { connect } from "react-redux";
+import { toggleClue } from "../redux/actions";
+import ClueList from "../components/ClueList";
+import { VISIBILITY_FILTERS } from "../constants";
 
 const getVisibleClues = (clues, filter) => {
   switch (filter) {

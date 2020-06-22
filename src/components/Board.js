@@ -1,5 +1,5 @@
  import React from "react";
- import PropTypes from "prop-types";
+ /*import PropTypes from "prop-types";*/
  import GridView from "../containers/GridView";
  import NavBar from "./NavBar";
  import AddClue from "../containers/AddClue";
@@ -8,7 +8,7 @@
  
  const status = 'Click once for X, again for O, again for blank:';
  
- const Board = ({ grids }) => (
+ const Board = () => (
   <div>
     <div className="NavBarAndPuzzleActions">
       <NavBar />
