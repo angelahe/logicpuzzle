@@ -28,6 +28,7 @@ const grids = (state = defaultGrid, action) => {
         /* try to make a copy of slice of state before change 
         let newgrids = ...state.grids[gridnum].squares
         */
+        
         switch (grids[action.gridnum].squares[action.index]) {
           case ' ':
             grids[action.gridnum].squares[action.index] = 'X';
