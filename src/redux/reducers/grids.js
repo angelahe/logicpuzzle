@@ -4,10 +4,10 @@ const defaultGrid = [
     { gridnum: 0,
       gridsize: 16,
       squares: Array(16).fill(' ')},
-    { gridnum: 0,
+    { gridnum: 1,
       gridsize: 16,
       squares: Array(16).fill(' ')}, 
-    { gridnum: 0,
+    { gridnum: 2,
       gridsize: 16,
       squares: Array(16).fill(' ')}
     ]
