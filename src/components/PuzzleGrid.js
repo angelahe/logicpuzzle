@@ -19,10 +19,10 @@ const PuzzleGrid = ({ grids, toggleSquare }) => (
         <FourLabelH />
       </div>
       <div className="p-2 fourgrid">
-        <FourGrid key={'grid0'} {...grids[0]} {...toggleSquare}/>
+        <FourGrid key={'grid0'} {...grids[0]} onClick={(index)=>toggleSquare(0, index)}/>
       </div>  
       <div className="p-2 fourgrid">
-        <FourGrid key={'grid1'} {...grids[1]} {...toggleSquare}/>
+        <FourGrid key={'grid1'} {...grids[1]} onClick={(index) => toggleSquare(1, index)}/>
       </div>  
     </div>
     <div className="d-flex flex-row" style={{ height: '165px' }}>
@@ -30,7 +30,7 @@ const PuzzleGrid = ({ grids, toggleSquare }) => (
         <FourLabelH />
       </div>
       <div className="p-2 fourgrid box-2-1">
-        <FourGrid key={'grid2'} {...grids[2]} {...toggleSquare}/>
+        <FourGrid key={'grid2'} {...grids[2]} onClick={(index) => toggleSquare(2, index)}/>
       </div>
     </div>
   </div>
