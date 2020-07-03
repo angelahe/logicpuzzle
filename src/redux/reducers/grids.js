@@ -15,6 +15,7 @@ const defaultGrid = [
 
 const grids = (state = defaultGrid, action) => {
   switch (action.type) {
+    /*TODO - need to figure out how to call this, with multiple gridsizes*/
     case INIT_GRID:
       return [
         ...state,
@@ -25,24 +26,28 @@ const grids = (state = defaultGrid, action) => {
         }
       ]
     case TOGGLE_SQUARE:
-        /* try to make a copy of slice of state before change 
-        let newgrids = ...state.grids[gridnum].squares
-        */
-        
-        switch (grids[action.gridnum].squares[action.index]) {
-          case ' ':
-            grids[action.gridnum].squares[action.index] = 'X';
-            break;
-          case 'X':
-            grids[action.gridnum].squares[action.index] = 'O';
-            break;
-          case 'O':
-            grids[action.gridnum].squares[action.index] = ' ';
-            break;
-          default:
-            grids[action.gridnum].squares[action.index] = ' '
-        }
-      return state
+      /* try to make a copy of slice of state before change 
+      let newgrids = ...state.grids[gridnum].squares
+      */
+      /*make a copy of grids */
+      let changeGrid = [...state] 
+
+      /*change state in the square that was toggled */
+      switch (changeGrid[action.gridnum].squares[action.index]) {
+        case ' ':
+          changeGrid[action.gridnum].squares[action.index] = 'X';
+          break;
+        case 'X':
+          changeGrid[action.gridnum].squares[action.index] = 'O';
+          break;
+        case 'O':
+          changeGrid[action.gridnum].squares[action.index] = ' ';
+          break;
+        default:
+          changeGrid[action.gridnum].squares[action.index] = ' '
+      }
+      /*return copy of grid including the change*/
+      return changeGrid
     case UNDO_MOVE:
       return state
     default:

@@ -25,10 +25,10 @@ export const toggleSquare = (gridnum, index) => ({
   type: TOGGLE_SQUARE,
   gridnum,
   index
-})
+});
 
 export const initGrid = (gridnum, gridsize) => ({
   type: INIT_GRID,
   gridnum: nextGridNum++,
   gridsize
-})
+});
