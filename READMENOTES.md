@@ -37,6 +37,8 @@ https://medium.com/ag-grid/learn-to-customize-react-grid-in-less-than-10-minutes
 
 https://www.grapecity.com/blogs/editable-datagrid-in-a-react-redux-application
 https://redux.js.org/recipes/structuring-reducers/initializing-state#:~:text=There%20are%20two%20main%20ways,to%20use%20as%20a%20default.
+javascript value vs reference
+https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0
 
 ## tests
 npm test

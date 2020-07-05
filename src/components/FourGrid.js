@@ -64,7 +64,7 @@ const FourGrid = ({ grid, toggleSquare }) => (
 )
 
 FourGrid.propTypes = {
-  grid: React.PropTypes.shape({
+  grid: PropTypes.shape({
     gridnum: PropTypes.number.isRequired,
     gridsize: PropTypes.number.isRequired,
     squares: PropTypes.arrayOf(PropTypes.string).isRequired
