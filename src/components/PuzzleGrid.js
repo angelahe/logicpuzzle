@@ -48,7 +48,3 @@ PuzzleGrid.propTypes = {
 }
 
 export default PuzzleGrid
-
-/*find the error!
-
-*/

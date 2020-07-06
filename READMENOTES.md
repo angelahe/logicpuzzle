@@ -39,7 +39,28 @@ https://www.grapecity.com/blogs/editable-datagrid-in-a-react-redux-application
 https://redux.js.org/recipes/structuring-reducers/initializing-state#:~:text=There%20are%20two%20main%20ways,to%20use%20as%20a%20default.
 javascript value vs reference
 https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0
+loading data in redux:
+https://hackernoon.com/handling-loading-actions-the-proper-way-in-redux-t3k36e8
+load and display data with redux:
+https://blog.isquaredsoftware.com/2016/12/practical-redux-part-5-loading-and-displaying-data/
+redux examples (106):
+https://react.rocks/tag/Redux
+https://daveceddia.com/redux-tutorial/
+https://www.freecodecamp.org/news/how-to-use-redux-in-reactjs-with-real-life-examples-687ab4441b85/
+https://github.com/reduxjs/redux/tree/master/examples
+https://www.taniarascia.com/redux-react-guide/
+https://www.tutorialspoint.com/redux/redux_react_example.htm
 
+for state of game and undo
+https://react.rocks/example/react-redux-sudoku
+for animation and possible future word games:
+https://react.rocks/example/redux-tetris
+
+next to read:
+## for loading data
+https://blog.isquaredsoftware.com/2016/12/practical-redux-part-5-loading-and-displaying-data/
+## for game history and undo
+https://react.rocks/example/react-redux-sudoku
 ## tests
 npm test
 
